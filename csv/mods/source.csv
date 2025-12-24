@@ -1,0 +1,6 @@
+# mod_name | optional_modpack_name | download_date | download_url | author | code_licence | media_licence | notes
+#unilib||20211001|https://github.com/axcore/unilib|A S Lewis|LGPL 2.1|CC BY-SA 3.0|Any original material is marked as being "imported" from unilib
+
+# All other mods
+#bbq||20230307|https://github.com/Grizzly-Adam/BBQ|Grizzly Adam|LGPL-2.1+|CC-BY-SA-3.0/CC-BY-3.0|Imported only beer (used by the "bbq_extra" remix); all other material from the "bbq" mod appears in unilib itself (in the "bbq" remix)
+wine||20250103|https://codeberg.org/tenplus1/wine|TenPlus1|MIT|CC BY 3.0/CC BY-SA 3.0/CC BY-SA 3.0/CC0|Imported everything

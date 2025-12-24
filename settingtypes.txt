@@ -1,0 +1,7 @@
+# -------------------------------------------------------------------------------------------------
+# unidrinks settings
+# -------------------------------------------------------------------------------------------------
+
+# If unilib's adult content setting is disabled, unidrinks will show a warning if this setting is
+# enabled
+unidrinks_show_warning_flag (Show warning when unilib adult content disabled) bool true

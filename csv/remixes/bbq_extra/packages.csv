@@ -1,0 +1,23 @@
+# "bbq_extra" remix - contains a single package from the bbq mod providing beer; all other material
+#       from the bbq mod appears in unilib itself (in the "bbq" remix)
+
+# node_name | original_mod
+
+# bbq packages
+drink_beer_light|bbq
+
+# supporting packages (.depends)
+#crop_wheat|farming
+#glass_ordinary|default moreblocks vessels
+#ingredient_yeast|bbq
+
+# supporting packages (.at_least_one)
+#crop_cotton|farming
+
+# supporting packages (.optional)
+#dye_basic|dye bakedclay
+#mineral_mese|default glemr11
+
+# supporting packages (.suggested)
+#bucket_steel|bucket
+#ingredient_sugar_normal|farming

@@ -1,0 +1,66 @@
+# "wine" remix - contains everything from the "wine" mod
+
+# node_name | original_mod
+
+# wine packages
+container_barrel_fermentation|wine
+deco_wine_plant_agave_blue|wine
+drink_beer_normal|wine
+drink_beer_wheat|wine
+drink_champagne_normal|wine
+drink_cider_normal|wine
+drink_cocktail_margarita|wine
+drink_cocktail_mint_julep|wine
+drink_juice_agave_sparkling|wine
+drink_juice_apple_sparkling|wine
+drink_juice_blackberry_sparkling|wine
+drink_juice_carrot_sparkling|wine
+drink_kefir|wine
+drink_liqueur_coffee|wine
+drink_mead_normal|wine
+drink_spirit_bourbon|wine
+drink_spirit_brandy|wine
+drink_spirit_cointreau|wine
+drink_spirit_rum|wine
+drink_spirit_tequila|wine
+drink_spirit_vodka|wine
+drink_wine_normal|wine
+drink_wine_sake|wine
+ingredient_syrup_agave|wine
+plant_agave_blue|wine
+shared_wine|wine
+
+# supporting packages (.depends)
+#glass_ordinary|default moreblocks vessels
+#metal_iron|default
+#metal_steel|default glemr11 technic
+#sand_desert|default farming
+#soil_sand_desert|farming
+#vessel_glass_empty|thirsty vessels
+
+# supporting packages (.at_least_one)
+
+# supporting packages (.optional)
+#crop_barley|farming
+#crop_mint_normal|farming
+#crop_rice_white|farming
+#crop_wheat|farming
+#dye_basic|dye bakedclay
+#food_honey_synthetic|xdecor
+#food_potato_baked|farming
+#fruit_apple|default
+#fruit_lemon|ethereal
+#fruit_orange|ethereal
+#item_paper_ordinary|default moreblocks
+#machine_furnace_induction|unilib
+#mineral_mese|default glemr11
+#plant_papyrus_ordinary|default mtg_plus
+#produce_blackberry|farming
+#produce_carrot_normal|farming
+#produce_coffee|farming
+#produce_corn_normal|farming
+#produce_grape|farming
+#vessel_glass_with_water|farming
+
+# supporting packages (.suggested)
+#ingredient_sugar_normal|farming
