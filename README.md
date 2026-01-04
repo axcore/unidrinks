@@ -7,7 +7,7 @@
 [unidrinks](https://github.com/axcore/unidrinks) is an expansion pack for **unilib**, providing (mostly) alchoholic drinks and related items from the following mods:
 
 * [bbq](https://github.com/Grizzly-Adam/BBQ) - imported only beer (used by the **bbq_extra** remix); all other material from the **bbq** mod appears in unilib itself (in the **bbq** remix)
-* [beer_teste](https://bitbucket.org/kingarthursteam/beer-test) - imported everything except the uncraftable drinks
+* [beer_test](https://bitbucket.org/kingarthursteam/beer-test) - imported everything except the uncraftable drinks
 * [wine](https://codeberg.org/tenplus1/wine) - imported everything
 
 <u>This mod is rated as 18+</u>. It provides alcoholic drinks, but there are no intoxication effects. At their parents' discretion, this mod *might* be suitable for some younger players.
