@@ -87,17 +87,25 @@ local function get_valid_recipe(inv)
     for _, mini_list in ipairs(recipe_list) do
 
         -- Check every item in the ingredient_list
+        local match_flag = true
         for _, full_name in pairs(mini_list[1]) do
 
             local item = full_name and ItemStack(full_name)
             if item and not inv:contains_item("src", item) then
+            
+                match_flag = false
                 break
+
             end
 
         end
 
-        -- Valid recipe found; return its ingredient list, and output
-        return mini_list[1], mini_list[2]
+        if match_flag then
+
+            -- Valid recipe found; return its ingredient list, and output
+            return mini_list[1], mini_list[2]
+
+        end
 
     end
 
@@ -411,7 +419,7 @@ function unilib.pkg.container_barrel_fermentation.exec()
 
             end
 
-            -- is there room for additional fermentation?
+            -- Is there room for additional fermentation?
             if not inv:room_for_item("dst", current_output_str) then
 
                 meta:set_string(

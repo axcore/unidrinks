@@ -1,3 +1,14 @@
+v1.0.1 (4 Jan 2026)
+---------------------------------------------------------------------------------------------------
+
+NEW IMPORTED MODS
+- beer_test (remix: "beer_test")
+    - https://bitbucket.org/kingarthursteam/beer-test/src/master/
+
+MAJOR PACKAGE FIXES
+- container_barrel_fermentation
+    - Fixed the recipe checker, so that it produces all available drinks, not just agave juice
+
 v1.0.0 (24 Dec 2025)
 ---------------------------------------------------------------------------------------------------
 

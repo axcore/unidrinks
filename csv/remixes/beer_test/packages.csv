@@ -1,0 +1,52 @@
+# "beer_test" remix - contains everything from the "beer_test" mod
+
+# node_name | original_mod
+
+# beer_test packages
+crop_hops|beer_test
+crop_oat_brewer|beer_test
+ingredient_grain_ale|beer_test
+ingredient_grain_beer|beer_test
+ingredient_grain_malt_black|beer_test
+ingredient_grain_malt_crystallised|beer_test
+ingredient_grain_malt_normal|beer_test
+ingredient_grain_mead|beer_test
+ingredient_grain_oat|beer_test
+ingredient_yeast_ale|beer_test
+mapgen_beer_test|beer_test
+misc_barrel_brewer_ale|beer_test
+misc_barrel_brewer_beer|beer_test
+misc_barrel_brewer_empty|beer_test
+misc_barrel_brewer_mead|beer_test
+misc_planting_frame|beer_test
+misc_tray_brewer|beer_test
+plant_hops_wild|beer_test
+plant_oat_brewer_wild|beer_test
+rope_brewer|beer_test
+shared_beer_test|beer_test
+vessel_tankard_empty|beer_test
+
+# supporting packages (.depends)
+crop_cotton|farming
+crop_wheat|farming
+fruit_apple|default
+item_stick_ordinary|default
+metal_iron|default
+metal_steel|default glemr11 technic
+plant_papyrus_ordinary|default mtg_plus
+tree_apple|default doors moreblocks
+
+# supporting packages (.at_least_one)
+dirt_dry|default farming
+dirt_ordinary|default farming moreblocks
+
+# supporting packages (.optional)
+#dye_basic|dye bakedclay
+#machine_furnace_induction|unilib
+#mushroom_brown|flowers
+#plant_shrub_dry|default
+
+# supporting packages (.suggested)
+# N.B. Packages in this section are not commented out, as they are in most remixes, in order to
+#   guarantee a crafting recipe for mead
+ingredient_sugar_normal|farming

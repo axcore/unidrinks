@@ -19,7 +19,7 @@ unidrinks = {}
 
 unidrinks.name = "unidrinks"
 
-unidrinks.ver_max = 0
+unidrinks.ver_max = 1
 unidrinks.ver_min = 1
 unidrinks.ver_rev = 0
 

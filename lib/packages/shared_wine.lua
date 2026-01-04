@@ -23,7 +23,8 @@ function unilib.pkg.shared_wine.register_drink(data_table)
     --      part_name (str): e.g. "wine_normal"
     --      glass_description (str): e.g. "Glass of Normal Wine"
     --      glass_orig_name (str): e.g. "wine:glass_wine"
-    --      value_alcohol (int): e.g. 1
+    --      value_alcohol (int): e.g. 1. The .alcohol group is not used by unilib/unidrinks code,
+    --          but is available for any code that needs it
     --      value_hunger (int): e.g. 2
     --      value_thirst (int): e.g. 5; currently ignored (in unilib, all drinks fully quench
     --          thirst)
