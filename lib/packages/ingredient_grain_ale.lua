@@ -8,7 +8,7 @@
 
 unilib.pkg.ingredient_grain_ale = {}
 
-local S = unilib.intllib
+local S = unidrinks.intllib
 local mode = unilib.global.imported_mod_table.beer_test.add_mode
 
 ---------------------------------------------------------------------------------------------------
@@ -34,7 +34,7 @@ function unilib.pkg.ingredient_grain_ale.exec()
 
     unilib.register_craftitem("unilib:ingredient_grain_ale", "beer_test:mixed_ale_grain", mode, {
         -- From beer_test:mixed_ale_grain
-        description = S("Mixed Ale Grain"),
+        description = S("Mixed Ale Grains"),
         inventory_image = "unilib_ingredient_grain_ale.png",
     })
     unilib.register_craft({

@@ -43,7 +43,7 @@ function unilib.pkg.drink_spirit_cointreau.exec()
 
     unilib.pkg.shared_wine.register_drink({
         -- From wine:glass_cointreau, wine:bottle_cointreau. Produces
-        --      unilib:drinkspirit_cointreau_glass, unilib:drink_spirit_cointreau_bottle
+        --      unilib:drink_spirit_cointreau_glass, unilib:drink_spirit_cointreau_bottle
         part_name = "spirit_cointreau",
         glass_description = S("Glass of Cointreau"),
         glass_orig_name = "wine:glass_cointreau",

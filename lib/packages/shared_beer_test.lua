@@ -8,7 +8,7 @@
 
 unilib.pkg.shared_beer_test = {}
 
-local S = unilib.intllib
+local S = unidrinks.intllib
 local mode = unilib.global.imported_mod_table.beer_test.add_mode
 
 local initial_brew_time = 60
@@ -485,6 +485,11 @@ function unilib.pkg.shared_beer_test.register_brewed_barrel(data_table)
 
                     local tankard_name = brewing_list[state].tankard_name
                     puncher:set_wielded_item(ItemStack(tankard_name))
+
+                    -- Update awards, if available
+                    if unilib.global.pkg_executed_table["award_brewer"] ~= nil then
+                        unilib.pkg.award_brewer.on_fill_tankard(puncher, tankard_name)
+                    end
 
                     new_full = meta:get_int("full") - 5
                     meta:set_int("full", new_full)

@@ -8,7 +8,7 @@
 
 unilib.pkg.ingredient_grain_oat = {}
 
-local S = unilib.intllib
+local S = unidrinks.intllib
 local mode = unilib.global.imported_mod_table.beer_test.add_mode
 
 ---------------------------------------------------------------------------------------------------
@@ -28,7 +28,7 @@ function unilib.pkg.ingredient_grain_oat.exec()
 
     unilib.register_craftitem("unilib:ingredient_grain_oat", "beer_test:oat_grain", mode, {
         -- From beer_test:oat_grain
-        description = S("Oat Grain"),
+        description = S("Oat Grains"),
         inventory_image = "unilib_ingredient_grain_oat.png",
     })
     unilib.register_craft({

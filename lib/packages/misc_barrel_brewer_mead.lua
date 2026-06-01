@@ -8,7 +8,7 @@
 
 unilib.pkg.misc_barrel_brewer_mead = {}
 
-local S = unilib.intllib
+local S = unidrinks.intllib
 local mode = unilib.global.imported_mod_table.beer_test.add_mode
 
 local brewing_list = {

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-# Copyright (C) 2023 A S Lewis
+# Copyright (C) 2023-2026 A S Lewis
 #
 # This program is free software; you can redistribute it and/or modify it under
 # the terms of the GNU Lesser General Public License as published by the Free
@@ -51,7 +51,7 @@ if main_count != archive_count:
     for path in archive_check_dict.keys():
         if not path in main_check_dict:
             main_missing_list.append(path)
-            
+
     for path in main_check_dict.keys():
         if not path in archive_check_dict:
             archive_missing_list.append(path)
@@ -64,7 +64,7 @@ if main_missing_list:
     print("\nMissing from ../lib/packages:")
     for path in main_missing_list:
         print(path)
-        
+
 if archive_missing_list:
     archive_missing_list.sort()
     print("\nMissing from ../archive/packages_ARCHIVE:")

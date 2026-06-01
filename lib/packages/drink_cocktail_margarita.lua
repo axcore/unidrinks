@@ -29,7 +29,7 @@ end
 function unilib.pkg.drink_cocktail_margarita.exec()
 
     unilib.pkg.shared_wine.register_drink({
-        -- From wine:glass_margarita. Produces Produces unilib:drink_cocktail_margarita_glass
+        -- From wine:glass_margarita. Produces unilib:drink_cocktail_margarita_glass (only)
         part_name = "cocktail_margarita",
         glass_description = S("Glass of Margarita"),
         glass_orig_name = "wine:glass_margarita",

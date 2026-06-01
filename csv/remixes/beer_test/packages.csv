@@ -1,8 +1,9 @@
-# "beer_test" remix - contains everything from the "beer_test" mod
+# "beer_test" remix - contains nearly everything from the beer_test mod
 
 # node_name | original_mod
 
 # beer_test packages
+award_brewer|unidrinks
 crop_hops|beer_test
 crop_oat_brewer|beer_test
 ingredient_grain_ale|beer_test
@@ -18,7 +19,7 @@ misc_barrel_brewer_ale|beer_test
 misc_barrel_brewer_beer|beer_test
 misc_barrel_brewer_empty|beer_test
 misc_barrel_brewer_mead|beer_test
-misc_planting_frame|beer_test
+misc_frame_planting|beer_test
 misc_tray_brewer|beer_test
 plant_hops_wild|beer_test
 plant_oat_brewer_wild|beer_test

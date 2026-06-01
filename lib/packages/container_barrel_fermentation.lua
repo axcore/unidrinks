@@ -92,7 +92,7 @@ local function get_valid_recipe(inv)
 
             local item = full_name and ItemStack(full_name)
             if item and not inv:contains_item("src", item) then
-            
+
                 match_flag = false
                 break
 
@@ -348,11 +348,27 @@ function unilib.pkg.container_barrel_fermentation.exec()
 
         end,
 
+        --[[
         on_metadata_inventory_take = function(pos)
 
             local timer = core.get_node_timer(pos)
             if not timer:is_started() then
                 core.get_node_timer(pos):start(cycle_time)
+            end
+
+        end,
+        ]]--
+
+        on_metadata_inventory_take = function(pos, listname, index, stack, player)
+
+            local timer = core.get_node_timer(pos)
+            if not timer:is_started() then
+                core.get_node_timer(pos):start(cycle_time)
+            end
+
+            -- Update awards, if available
+            if listname == "dst" and unilib.global.pkg_executed_table["award_fermenter"] ~= nil then
+                unilib.pkg.award_fermenter.on_ferment(player, stack:get_name(), stack:get_count())
             end
 
         end,
@@ -610,8 +626,6 @@ function unilib.pkg.container_barrel_fermentation.post()
             for _, full_name in pairs(pipeworks.pipes_full_nodenames) do
                 table.insert(water_inlet_list, full_name)
             end
-
-            unilib.utils.show_table(pipeworks.pipes_full_nodenames)
 
         end
 

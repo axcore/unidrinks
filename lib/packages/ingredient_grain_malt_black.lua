@@ -8,7 +8,7 @@
 
 unilib.pkg.ingredient_grain_malt_black = {}
 
-local S = unilib.intllib
+local S = unidrinks.intllib
 local mode = unilib.global.imported_mod_table.beer_test.add_mode
 
 ---------------------------------------------------------------------------------------------------
@@ -32,7 +32,7 @@ function unilib.pkg.ingredient_grain_malt_black.exec()
         "beer_test:malt_grain_black_malt",
         mode,
         {
-            description = S("Black Malt Grain"),
+            description = S("Black Malt Grains"),
             inventory_image = "unilib_ingredient_grain_malt_black.png",
         }
     )

@@ -42,7 +42,7 @@ function unilib.pkg.drink_spirit_bourbon.exec()
     end
 
     unilib.pkg.shared_wine.register_drink({
-        -- From wine:glass_bourbon, wine:bottle_bourbon". Produces
+        -- From wine:glass_bourbon, wine:bottle_bourbon. Produces
         --      unilib:drink_spirit_bourbon_glass, unilib:drink_spirit_bourbon_bottle
         part_name = "spirit_bourbon",
         glass_description = S("Glass of Bourbon"),

@@ -1,4 +1,29 @@
-v1.0.1 (4 Jan 2026)
+v1.2.0 (1 Jun 2026)
+---------------------------------------------------------------------------------------------------
+
+MAJOR NEW FEATURES
+- This version of unimobs requires unilib v1.2.0, or later
+- Added new packages for unilib's awards system, and updated some existing code to make it
+    compatible. The "wine" and "beer_test" remixes have been updated to include the new awards
+    packages
+
+MINOR NEW FEATURES
+- Updated the "ingredient_yeast_ale" package to add a "food_yeast" group, to match unilib's own
+    "ingredient_yeast" package
+- Renamed the "misc_planting_frame" package as "misc_frame_planting". The frame is difficult to see
+    in the player's inventory; created a new inventory texture for it
+- In the /archive folder, added a CREDITS file to any sub-folders that lacked them
+- Updated remixes to satisfy the new unilib standard
+- Updated the python scripts in ../scripts/unilib, to match the equivalent scripts in unilib v1.2.0
+
+MAJOR FIXES
+- The "everything" remix produces "unrecognised source mod in remix" warnings, when unidrinks is
+    loaded. Fixed
+    
+MINOR FIXES
+- Some packages used "local S = unilib.intllib" instead of the unidrinks equivalent; fixed them
+
+v1.1.0 (4 Jan 2026)
 ---------------------------------------------------------------------------------------------------
 
 NEW IMPORTED MODS

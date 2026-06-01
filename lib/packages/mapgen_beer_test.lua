@@ -8,7 +8,7 @@
 
 unilib.pkg.mapgen_beer_test = {}
 
-local S = unilib.intllib
+local S = unidrinks.intllib
 local mode = unilib.global.imported_mod_table.beer_test.add_mode
 
 ---------------------------------------------------------------------------------------------------

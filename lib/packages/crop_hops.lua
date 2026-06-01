@@ -8,7 +8,7 @@
 
 unilib.pkg.crop_hops = {}
 
-local S = unilib.intllib
+local S = unidrinks.intllib
 local mode = unilib.global.imported_mod_table.beer_test.add_mode
 
 local mature_node_box = {
@@ -49,7 +49,7 @@ function unilib.pkg.crop_hops.init()
                 " See the notes in the \"rope_brewer\" package for the correct method of rope" ..
                 " placement. Harvested hops should be dried by placing it beneath a walkable" ..
                 " node (such as wooden planks), with plenty of air",
-        depends = {"misc_planting_frame", "rope_brewer"},
+        depends = {"misc_frame_planting", "rope_brewer"},
     }
 
 end
@@ -86,7 +86,7 @@ function unilib.pkg.crop_hops.exec()
         unilib.register_node("unilib:crop_hops_grow_" .. i, "beer_test:hops_" .. i, mode, {
             -- From beer_test:hops_1, etc; creates unilib:crop_hops_grow_1, et
             -- (no description)
-            tiles = {"unilib_crop_hops_grow_" .. i .. ".png^unilib_misc_planting_frame.png"},
+            tiles = {"unilib_crop_hops_grow_" .. i .. ".png^unilib_misc_frame_planting.png"},
             groups = {
                 flammable = 2, hops = i, not_in_creative_inventory = 1, plant = 1, snappy = 3,
             },
@@ -101,7 +101,7 @@ function unilib.pkg.crop_hops.exec()
                     {items = {"unilib:crop_hops_seed"}, rarity = 9 - i},
                     {items = {"unilib:crop_hops_seed"}, rarity = 18 - (i * 2)},
                     {items = {"unilib:crop_hops_seed"}, rarity = 27 - (i * 3)},
-                    {items = {"unilib:misc_planting_frame"}, rarity = 1 - i},
+                    {items = {"unilib:misc_frame_planting"}, rarity = 1 - i},
                 }
             },
             paramtype = "light",

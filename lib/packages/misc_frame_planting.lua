@@ -6,16 +6,16 @@
 -- Media:   CC BY-SA 4.0
 ---------------------------------------------------------------------------------------------------
 
-unilib.pkg.misc_planting_frame = {}
+unilib.pkg.misc_frame_planting = {}
 
-local S = unilib.intllib
+local S = unidrinks.intllib
 local mode = unilib.global.imported_mod_table.beer_test.add_mode
 
 ---------------------------------------------------------------------------------------------------
 -- New code
 ---------------------------------------------------------------------------------------------------
 
-function unilib.pkg.misc_planting_frame.init()
+function unilib.pkg.misc_frame_planting.init()
 
     return {
         description = "Planting frame",
@@ -26,22 +26,24 @@ function unilib.pkg.misc_planting_frame.init()
 
 end
 
-function unilib.pkg.misc_planting_frame.exec()
+function unilib.pkg.misc_frame_planting.exec()
 
     local c_stick = "unilib:item_stick_ordinary"
 
-    unilib.register_node("unilib:misc_planting_frame", "beer_test:crop", mode, {
+    unilib.register_node("unilib:misc_frame_planting", "beer_test:crop", mode, {
         -- From beer_test:crop
         description = S("Planting Frame"),
-        tiles = {"unilib_misc_planting_frame.png"},
+        tiles = {"unilib_misc_frame_planting.png"},
         -- N.B. Removed chopspy = 2 from original code
         groups = {flammable = 2, oddly_breakable_by_hand = 3, plant = 1},
         sounds = unilib.global.sound_table.wood,
 
         drawtype = "plantlike",
+        inventory_image = "unilib_misc_frame_planting_inv.png",
         paramtype = "light",
         paramtype2 = "facedir",
         walkable = false,
+        wield_image = "unilib_misc_frame_planting_inv.png",
 
         on_punch = function(pos, node, puncher)
 
@@ -64,11 +66,15 @@ function unilib.pkg.misc_planting_frame.exec()
     })
     unilib.register_craft({
         -- From beer_test:crop
-        output = "unilib:misc_planting_frame 2",
+        output = "unilib:misc_frame_planting 2",
         recipe = {
             {c_stick, "", c_stick},
             {c_stick, "", c_stick},
         },
     })
+    -- N.B. These items were renamed in unidrinks v1.2.0
+    core.register_alias(
+        "unilib:misc_planting_frame", "unilib:misc_frame_planting"
+    )
 
 end

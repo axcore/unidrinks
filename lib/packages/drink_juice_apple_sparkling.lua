@@ -46,7 +46,7 @@ function unilib.pkg.drink_juice_apple_sparkling.exec()
     end
 
     unilib.pkg.shared_wine.register_drink({
-        -- From wine:glass_sparkling_apple_juice, wine:bottle_sparkling_apple_juice". Produces
+        -- From wine:glass_sparkling_apple_juice, wine:bottle_sparkling_apple_juice. Produces
         --      unilib:drink_juice_apple_sparkling_glass, unilib:drink_juice_apple_sparkling_bottle
         part_name = "juice_apple_sparkling",
         glass_description = S("Glass of Sparkling Apple Juice"),

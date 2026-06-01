@@ -8,7 +8,7 @@
 
 unilib.pkg.ingredient_yeast_ale = {}
 
-local S = unilib.intllib
+local S = unidrinks.intllib
 local mode = unilib.global.imported_mod_table.beer_test.add_mode
 
 ---------------------------------------------------------------------------------------------------
@@ -30,6 +30,9 @@ function unilib.pkg.ingredient_yeast_ale.exec()
         -- From beer_test:yeast
         description = S("Ale Yeast"),
         inventory_image = "unilib_ingredient_yeast_ale.png",
+        -- N.B. No groups in original code; added for consistency with the "ingredient_yeast"
+        --      package
+        groups = {food_yeast = 1},
     })
     unilib.register_craft({
         -- From beer_test:yeast

@@ -8,7 +8,7 @@
 
 unilib.pkg.ingredient_grain_malt_normal = {}
 
-local S = unilib.intllib
+local S = unidrinks.intllib
 local mode = unilib.global.imported_mod_table.beer_test.add_mode
 
 ---------------------------------------------------------------------------------------------------
@@ -32,7 +32,7 @@ function unilib.pkg.ingredient_grain_malt_normal.exec()
         "beer_test:malt_grain_malt",
         mode,
         {
-            description = S("Normal Malt Grain"),
+            description = S("Normal Malt Grains"),
             inventory_image = "unilib_ingredient_grain_malt_normal.png",
         }
     )

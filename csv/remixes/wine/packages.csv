@@ -1,8 +1,9 @@
-# "wine" remix - contains everything from the "wine" mod
+# "wine" remix - contains everything from the wine mod
 
 # node_name | original_mod
 
 # wine packages
+award_fermenter|unidrinks
 container_barrel_fermentation|wine
 deco_wine_plant_agave_blue|wine
 drink_beer_normal|wine

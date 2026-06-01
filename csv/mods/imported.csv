@@ -1,5 +1,5 @@
 # mod_name | detect_mode | replace_mode | notes
-#unilib|detect|replace|
+unidrinks|detect|replace|
 
 # All other mods
 #bbq|detect|defer|
